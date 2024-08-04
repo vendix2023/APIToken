@@ -31,7 +31,7 @@ function decodeJwt(token, secretKey) {
 }
 
 // Ruta para manejar pagos
-app.post('/pay', (req, res) => {
+app.get('/pay', (req, res) => {
     const token = req.body.token;
 
     if (token) {
